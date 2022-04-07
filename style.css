@@ -1,3 +1,33 @@
-h1 {
-  color: blue;
+.container {
+  text-align:center;
+  margin: auto;
+  width: 1400px;
+  height: 100vh;
+  background-color: gray;
+
+  display: grid;
+  grid-template-columns: 3fr 5fr
+}
+
+.left {
+  background-image: url("background-image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.right {
+  background: lightblue;
+}
+
+.logo {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 38px;
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  
+}
+
+.caption {
+  color: white;
 }
