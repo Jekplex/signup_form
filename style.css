@@ -1,15 +1,14 @@
-/* 
-
-Rubik font from Google Fonts
-
-https://fonts.google.com/specimen/Rubik?preview.text=Photo%20by%20ELLA%20DON%20on%20Unsplash&preview.size=16&preview.text_type=custom#standard-styles
-
-*/
+/* Rubik from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+  font-size: 24px;
+  font-family: 'Rubik', sans-serif;
+  background: gray;
+}
 
 .container {
-  text-align:center;
+  text-align: left;
   margin: auto;
   width: 1400px;
   height: 100vh;
@@ -18,10 +17,6 @@ https://fonts.google.com/specimen/Rubik?preview.text=Photo%20by%20ELLA%20DON%20o
   display: grid;
   grid-template-columns: 3fr 5fr
 }
-
-/* .sidebar {
-
-} */
 
 .sidebar-items {
   display:flex;
@@ -41,6 +36,7 @@ https://fonts.google.com/specimen/Rubik?preview.text=Photo%20by%20ELLA%20DON%20o
   color: white;
   font-size: 15px;
   font-family: 'Rubik', sans-serif;
+  text-align: center;
 }
 .bg-image-credit a {
   color: inherit;
@@ -74,6 +70,100 @@ https://fonts.google.com/specimen/Rubik?preview.text=Photo%20by%20ELLA%20DON%20o
   
 }
 
+.bold {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
 main {
-  background-color: palegreen;
+  background-color: #f9fafb;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: stretch; */
+}
+
+.main-width-container {
+  width: 745px;
+  margin: 0 auto 0 auto;
+}
+
+.main-text {
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+.main-text p {
+  margin-top: 20px;
+}
+
+.signup-section {
+  background-color: white;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: 10px 0 10px 0;
+}
+
+form .signup-section p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #222d39;
+  font-weight: 500;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 80px;
+  row-gap: 10px;
+}
+
+form div.form-inputs {
+  padding-bottom: 35px;
+}
+
+form .form-inputs div {
+  width: 250px;
+}
+
+form .form-inputs label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222d39;
+}
+form .form-inputs input {
+  width: 100%;
+  padding:5px;
+  padding-left:10px;
+  margin-top: 3px;
+
+  border: none;
+  border:solid 1px #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: purple;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 16px 48px;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.sub-text {
+  font-size: 18px;
+  margin-top: 30px;;
 }
