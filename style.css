@@ -26,7 +26,7 @@ body {
 }
 
 .bg-image {
-  background-image: url(bg-image.jpg);
+  background-image: url(img/bg-image.jpg);
   background-position: center;
   background-size: cover;
 }
