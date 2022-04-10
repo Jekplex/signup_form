@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="meyer.css">
     <link rel="stylesheet" href="style.css">
   </head>
+  
+  <script>
+    function verifyPassword() {
+      if (document.getElementById("password").value == document.getElementById("confirm-password").value) {
+        document.getElementById("password").classList.remove("error");
+        document.getElementById("confirm-password").classList.remove("error");
+        document.getElementById("pass-error-text").innerText = "";
+      } else {
+        document.getElementById("password").classList.add("error");
+        document.getElementById("confirm-password").classList.add("error")
+        document.getElementById("pass-error-text").innerText = "* Passwords do not match";
+      }
+    }
+  </script>
+
   <body>
 
     <div class="container">
@@ -71,12 +86,13 @@
 
                 <div>
                   <label for="password">Password</label>
-                  <input type="password" name="password" id="password">
+                  <input type="password" name="password" id="password" onkeyup="verifyPassword();">
+                  <span id="pass-error-text"></span>
                 </div>
 
                 <div>
                   <label for="confirm-password">Confirm Password</label>
-                  <input type="password" name="confirm-password" id="confirm-password">
+                  <input type="password" name="confirm-password" id="confirm-password" onkeyup="verifyPassword();">
                 </div>
 
               </div>
